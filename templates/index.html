@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Le formulaire s'affiche uniquement si le NAS est accessible -->
+        <h1>Formulaire</h1>
+        <form method="POST" action="/submit">
+            <label for="os_number">N° OS :</label>
+            <input type="text" id="os_number" name="os_number" required>
+
+            <label for="creator">OS créé par ?</label>
+            <select id="creator" name="creator">
+                {% for createur in createurs %}
+                    <option value="{{ createur }}">{{ createur }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="po_number">N° PO :</label>
+            <input type="text" id="po_number" name="po_number" placeholder="(Optionnel)">
+
+            <label for="client">Sélectionnez un client :</label>
+            <select id="client" name="client">
+                {% for client in clients %}
+                    <option value="{{ client }}">{{ client }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="flux">Flux ?</label>
+            <select id="flux" name="flux">
+                {% for flux_option in flux %}
+                    <option value="{{ flux_option }}">{{ flux_option }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="contractor">Sélectionnez un Sous-traitant :</label>
+            <select id="contractor" name="contractor">
+                {% for sous_traitant in sous_traitants %}
+                    <option value="{{ sous_traitant }}">{{ sous_traitant }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="category">Sélectionnez une catégorie de problème :</label>
+            <select id="category" name="category">
+                {% for category in categories %}
+                    <option value="{{ category }}">{{ category }}</option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>

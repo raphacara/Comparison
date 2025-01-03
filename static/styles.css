@@ -1,0 +1,49 @@
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px 0; /* Ajouter du padding en haut et en bas */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligne le formulaire en haut */
+    height: auto; /* Permet à la page d'être scrollable si nécessaire */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px; /* Plus d'espace interne */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 50px; /* Espace entre le haut de la page et le formulaire */
+    margin-bottom: 50px; /* Espace entre le bas de la page et le formulaire */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
