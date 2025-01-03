@@ -1,0 +1,38 @@
+OS - Non lancé
+OS - Incomplet
+OS - Structure (ex. Interne vs S/T, mauvais poste ou gamme)
+OS - Flux livraison (dropshipment vs cross-dock)
+OS - Révision ESM non mise à jour
+OS - ESN manquant ou erroné
+OS - OS Tclos (projet clos)
+~
+Document manquant - NIS (Non-Incident Service) manquant
+Document manquant - FIM manquant / incohérent / ESN / Transport
+~
+Qualité - FIQ manquant
+Qualité - DVE manquant
+~
+Workscope - Manquant / Incomplet
+Workscope - Application SB non-présente au workscope
+~
+Livraison - Ecart quantité (ex. livraison client vs pièce(s) à envoyer)
+Livraison - Pièce pas disponible physiquement
+Livraison - Pas d'adresse de retour / livraison (dropshipment)
+~
+TSN/CSN - Manquant
+TSN/CSN- Erroné
+~
+P/N & S/N - Manquant
+P/N & S/N - Erroné
+P/N & S/N - Différent entre le workscope et pièce physique
+P/N & S/N - P/N CFM au lieu de P/N vendor
+~
+Achats & Schéma Indus - Schéma industriel pas mis à jour
+Achats & Schéma Indus - Contrats pas à jour / FIA manquant
+Achats & Schéma Indus - Pas de schéma industriel / ATA sans source
+Achats & Schéma Indus - Pas dans capability list mais dans le schéma industriel
+~
+Aerowebb - Non renseigné
+Aerowebb - Avis Inspection manquant
+Aerowebb - Projet non ouvert
+Aerowebb - Blocage système

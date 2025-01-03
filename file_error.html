@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="error-box">
+            <h2>Problèmes détectés :</h2>
+            <ul>
+                {% for error in file_errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+            <p>Veuillez contacter : <a href="mailto:raphael.carabeuf@safrangroup.com">raphael.carabeuf@safrangroup.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
